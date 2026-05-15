@@ -96,46 +96,8 @@ asyncio.run(main())
 ## Configuration
 
 | Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `headless` | `bool` | `True` | Run browser in headless mode |
-| `proxy` | `ProxyConfig` | `None` | Proxy configuration |
-| `fingerprint` | `FingerprintConfig` | `None` | Fingerprint spoofing options |
-| `timeout` | `int` | `30000` | Default navigation timeout (ms) |
-| `browser_type` | `str` | `"chromium"` | Browser engine (`chromium`, `firefox`, `webkit`) |
 
-## Development
+## Notes (Personal)
 
-### Setup
-
-```bash
-git clone https://github.com/your-org/CloakBrowser.git
-cd CloakBrowser
-pip install -e ".[dev]"
-playwright install
-```
-
-### Running Tests
-
-```bash
-pytest tests/ -v
-```
-
-### Linting
-
-```bash
-ruff check .
-mypy cloakbrowser/
-```
-
-## Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) and open an issue before submitting a pull request.
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
-## Acknowledgements
-
-- Original project: [CloakHQ/CloakBrowser](https://github.com/CloakHQ/CloakBrowser)
-- Built on [Playwright for Python](https://playwright.dev/python/)
+- I primarily use this with `spoof_timezone="Europe/London"` and `spoof_locale="en-GB"` to match my local setup.
+- The `browserleaks.com` test in the fingerprint example is handy for quickly verifying spoofing is working.
