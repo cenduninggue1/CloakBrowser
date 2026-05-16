@@ -97,7 +97,7 @@ asyncio.run(main())
 
 | Option | Type | Default | Description |
 
-## Notes (Personal)
+## Notes (Personal Fork)
 
 - I primarily use this with `spoof_timezone="Europe/London"` and `spoof_locale="en-GB"` to match my local setup.
-- The `browserleaks.com` test in the fingerprint example is handy for quickly verifying spoofing is working.
+- Firefox support via Playwright seems flaky on my machine — sticking to `chromium` for now.
