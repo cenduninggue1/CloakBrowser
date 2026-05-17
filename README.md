@@ -99,5 +99,5 @@ asyncio.run(main())
 
 ## Notes (Personal Fork)
 
-- I primarily use this with `spoof_timezone="Europe/London"` and `spoof_locale="en-GB"` to match my local setup.
-- Firefox support via Playwright seems flaky on my machine — sticking to `chromium` for now.
+- I use `spoof_timezone="Europe/London"` and `spoof_locale="en-GB"` as my personal defaults since that matches my testing environment better than the `en-US` examples above.
+- Tested primarily on Python 3.11 — haven't tried 3.9 myself.
